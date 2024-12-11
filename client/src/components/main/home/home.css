@@ -1,0 +1,224 @@
+:root{
+  --primaryColor: hsl(94, 55%, 56%);
+  --hoverColor: hsl(93, 75%, 76%);
+  --paleGreen: hsl(96, 75%, 89%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyText: hsl(0, 0%, 75%);
+  --bgColor: hsl(113, 11%, 85%);
+  --inputColor: hsl(330, 12%, 97%);
+
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: .938rem;
+  --smallFontSize: .813rem;
+  --smallestFontSize: .75rem;
+}
+
+/* Banner Styling */
+.banner {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+
+    .banner-video {
+      /* position: absolute;
+      top: 0;
+      left: 0; */
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* background-attachment: fixed; */
+      z-index: -1;
+    }
+
+    .banner-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      z-index: 1;
+
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+      }
+
+      h3 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+      }
+
+      .btn {
+        background-color: #f0a500;
+        color: white;
+        text-decoration: none;
+        padding: 0.8rem 1.5rem;
+        border-radius: 5px;
+        font-size: 1rem;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn:hover {
+        background-color: #c47c00;
+      }
+    }
+}
+
+
+.what{
+  background: var(--bgColor);
+  position: relative;
+  height: 80vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  gap: 1;
+
+  .div1, .div2{
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    /* text-align: center; */
+
+    video{
+      width: 80%;
+      height: auto;
+      padding: 1rem;
+    }
+  }
+
+  h1{
+    position: absolute;
+    left: 50%;
+    top: 7%;
+    transform: translateX(-50%);
+    font-size: var(--h1FontSize);
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+
+  /* .div3,.div4,.div5,.div6{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+  }
+
+  .div3{
+    left: 10px;
+    top: 10px;
+    border-left: 5px solid var(--primaryColor);
+    border-top: 5px solid var(--primaryColor);
+  }
+
+  .div4{
+    left: 10px;
+    bottom: 10px;
+    border-bottom: 5px solid var(--primaryColor);
+    border-left: 5px solid var(--primaryColor);
+  }
+
+  .div5{
+    right: 10px;
+    top: 10px;
+    border-right: 5px solid var(--primaryColor);
+    border-top: 5px solid var(--primaryColor);
+  }
+
+  .div6{
+    right: 10px;
+    bottom: 10px;
+    border-bottom: 5px solid var(--primaryColor);
+    border-right: 5px solid var(--primaryColor);
+  } */
+}
+
+.latestBooks{
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 0;
+  position: relative;
+
+  .title{
+    padding: 1.5rem 0;
+
+    h3{
+      font-size: var(--h1FontSize);
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: underline;
+    }
+  }
+
+  .latestCard{
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    .items{
+      width: 300px;
+      height: 200px;
+      justify-content: space-between;
+      background: var(--bgColor);
+      border-radius: 5px;
+      padding: 1rem;
+
+      img{
+        width: 100px;
+        height: 100%;
+        border-radius: 5px;
+      }
+
+      .details{
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  }
+}
+
+
+
+
+.div3,.div4,.div5,.div6{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+}
+
+.div3{
+  left: 10px;
+  top: 10px;
+  border-left: 5px solid var(--primaryColor);
+  border-top: 5px solid var(--primaryColor);
+}
+
+.div4{
+  left: 10px;
+  bottom: 10px;
+  border-bottom: 5px solid var(--primaryColor);
+  border-left: 5px solid var(--primaryColor);
+}
+
+.div5{
+  right: 10px;
+  top: 10px;
+  border-right: 5px solid var(--primaryColor);
+  border-top: 5px solid var(--primaryColor);
+}
+
+.div6{
+  right: 10px;
+  bottom: 10px;
+  border-bottom: 5px solid var(--primaryColor);
+  border-right: 5px solid var(--primaryColor);
+}

@@ -1,0 +1,106 @@
+/* General Styles */
+:root {
+    --primaryColor: hsl(94, 55%, 56%);
+    --hoverColor: hsl(93, 75%, 76%);
+    --paleGreen: hsl(96, 75%, 89%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 18%);
+    --greyText: hsl(0, 0%, 75%);
+    --bgColor: hsl(113, 11%, 85%);
+    --inputColor: hsl(330, 12%, 97%);
+    --biggestFontSize: 2.5rem;
+    --h1FontSize: 1.5rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: .938rem;
+    --smallFontSize: .813rem;
+    --smallestFontSize: .75rem;
+  }
+  
+  .feedback-section {
+    background-color: var(--bgColor);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .feedback-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--whiteColor);
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  .section-title {
+    font-size: var(--biggestFontSize);
+    color: var(--blackColor);
+    margin-bottom: 2rem;
+  }
+  
+  .feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .form-label {
+    font-size: var(--normalFontSize);
+    color: var(--blackColor);
+  }
+  
+  .form-input {
+    padding: 0.8rem;
+    font-size: var(--normalFontSize);
+    border: 1px solid var(--greyText);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .submit-button {
+    padding: 1rem;
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+    border: none;
+    border-radius: 8px;
+    font-size: var(--normalFontSize);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: var(--hoverColor);
+  }
+  
+  .success-message {
+    font-size: var(--normalFontSize);
+    color: var(--primaryColor);
+    margin-top: 1rem;
+  }
+  
+  .testimonials {
+    margin-top: 2rem;
+    font-size: var(--normalFontSize);
+    color: var(--greyText);
+  }
+  
+  .testimonials p {
+    margin: 1rem 0;
+  }
+  
+  /* Animation for Success Message */
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .success-message {
+    animation: slideIn 0.5s ease-in-out;
+  }
+  

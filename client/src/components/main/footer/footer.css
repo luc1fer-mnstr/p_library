@@ -1,0 +1,101 @@
+/* Footer Styling */
+footer {
+    background-color: #1a202c; /* Tailwind's bg-gray-900 */
+    color: #e2e8f0; /* Tailwind's text-gray-200 */
+    padding: 2.5rem 1rem; /* py-10 px-6 */
+  }
+  
+  footer .container {
+    max-width: 1120px; /* Tailwind's max-w-7xl */
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Column Styling */
+  footer .column {
+    width: 100%;
+    margin-bottom: 1.5rem; /* Tailwind's mb-6 */
+  }
+  
+  @media (min-width: 640px) { /* Tailwind's sm: breakpoint */
+    footer .column {
+      width: 24%; /* Tailwind's sm:w-1/4 */
+    }
+  }
+  
+  /* Quick Links Section */
+  footer .quick-links h3,
+  footer .contact h3,
+  footer .about-project h3 {
+    font-size: 1.125rem; /* Tailwind's text-lg */
+    font-weight: bold;
+    margin-bottom: 1rem; /* Tailwind's mb-4 */
+  }
+  
+  footer .quick-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer .quick-links ul li {
+    margin-bottom: 0.5rem; /* Tailwind's space-y-2 */
+  }
+  
+  footer .quick-links ul li a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  footer .quick-links ul li a:hover {
+    color: #f97316; /* Tailwind's hover:text-orange-500 */
+  }
+  
+  /* Contact Section */
+  footer .contact .info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem; /* Tailwind's mb-2 */
+  }
+  
+  footer .contact .info a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  footer .contact .info a:hover {
+    color: #f97316; /* Tailwind's hover:text-orange-500 */
+  }
+  
+  footer .contact .social-icons {
+    display: flex;
+    gap: 1rem; /* Tailwind's space-x-4 */
+    margin-top: 1rem; /* Tailwind's mt-4 */
+  }
+  
+  footer .contact .social-icons a {
+    color: inherit;
+    transition: color 0.3s ease;
+  }
+  
+  footer .contact .social-icons a:hover {
+    color: #f97316; /* Tailwind's hover:text-orange-500 */
+  }
+  
+  /* About Project Section */
+  footer .about-project p {
+    font-size: 0.875rem; /* Tailwind's text-sm */
+  }
+  
+  /* Footer Bottom Section */
+  footer .footer-bottom {
+    margin-top: 2.5rem; /* Tailwind's mt-10 */
+    border-top: 1px solid #2d3748; /* Tailwind's border-gray-800 */
+    padding-top: 1rem; /* Tailwind's pt-4 */
+    text-align: center;
+    font-size: 0.875rem; /* Tailwind's text-sm */
+  }
+  

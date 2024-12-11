@@ -1,0 +1,123 @@
+:root{
+  --primaryColor: hsl(94, 55%, 56%);
+  --hoverColor: hsl(93, 75%, 76%);
+  --paleGreen: hsl(96, 75%, 89%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyText: hsl(0, 0%, 75%);
+  --bgColor: hsl(113, 11%, 85%);
+  --inputColor: hsl(330, 12%, 97%);
+
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: .938rem;
+  --smallFontSize: .813rem;
+  --smallestFontSize: .75rem;
+}
+
+/* Navbar Styling */
+.navbar {
+  background: var(--bgColor);
+  color: white;
+  padding: .5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    /* padding: 0 1rem; */
+
+    .logo {
+      font-size: 1.5rem;
+      color: rgb(4, 50, 4);
+      font-weight: bold;
+      text-transform: uppercase;
+      gap: 1rem;
+
+      img{
+        width: 80px;
+        height: 80px;
+      }
+
+      span{
+        small{
+          font-size: var(--smallestFontSize);
+        }
+      }
+ 
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      color: green;
+      cursor: pointer;
+      margin-right: 1rem;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+
+       li {
+          .item {
+          color: rgba(4, 50, 4, .7);
+          text-decoration: none;
+          font-size: 1.2rem;
+          font-weight: bold;
+          transition: color 0.3s ease;
+
+          &:hover{
+            color: rgba(4, 50, 4, 1);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block !important;
+  }
+
+  .nav-links {
+    display: none !important;
+    /* flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 200px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); */
+  }
+
+  .nav-links.open {
+    display: flex !important;
+    flex-direction: column;
+    background-color: var(--primaryColor);
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+
+    li{
+      .item{
+        font-size: .9rem;
+      }
+    }
+  }
+}
