@@ -43,6 +43,25 @@ app.post('/register', (req, res)=>{
     })
 })
 
+app.post('/dashboard/add-book', (req, res)=>{
+    const bookName = req.body.bookName
+    const author = req.body.author
+    const type = req.body.type
+    const file = req.body.file
+
+    const SQL = 'INSERT INTO books (book_name, author,type,file_path) VALUES (?,?,?,?)'
+    const Values = [bookName, author, type, file]
+
+    db.query(SQL, Values, (err, results)=>{
+        if(err){
+            res.send(err)
+        }else{
+            console.log('Book added successful!')
+            res.send({message: "Book Added"})
+        }
+    })
+})
+
 // login user
 app.post('/login', (req,res)=>{
     // We need to get variables sent from the form

@@ -53,6 +53,7 @@
 
         .menuLists{
             .listItem{
+                cursor: pointer;
                 padding: .2rem 1.5rem;
                 width: 100%;
                 position: relative;
@@ -70,12 +71,27 @@
                 }
 
                 .menuLink{
+                    position: relative;
                     color: var(--greyText);
                     font-weight: 500;
                     transition: 0;
 
                     .icon{
                         margin-right: .5rem;
+                    }
+
+                    .smallText{
+
+                        .icon{
+                            font-size: var(--h3FontSize);
+                            margin-left: 1rem;
+                        }
+                    }
+
+                    .icon-dropdown{
+                        position: absolute;
+                        right: 20px;
+                        top: 0;
                     }
                 }
 
@@ -88,6 +104,36 @@
                     height: 100%;
                     transition: .3s ease;
                 }
+
+                .dropdownMenu {
+                    color: var(--greyText);
+                    font-weight: 500;
+                    transition: 0;
+                    margin: 20px 0 0 20px;
+                    list-style: none;
+
+                    .flex{
+                        margin: 10px 0;
+                    }
+
+                    .icon{
+                        font-size: var(--h3FontSize);
+                    }
+                  }
+                  
+                  .dropdownItem {
+                    color: var(--greyText);
+                    text-decoration: none;
+                    display: block;
+                    margin-left: 8px;
+                    transition: color 0.3s ease;
+                    font-size: var(--normalFontSize);
+                    padding: 5px 0;
+                  }
+                  
+                  .dropdownItem:hover {
+                    color: var(--primary-color);
+                  }
             }
         }
     }
@@ -230,4 +276,4 @@
             }
         }
     }
-}
+}  

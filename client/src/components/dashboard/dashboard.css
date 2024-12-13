@@ -12,7 +12,7 @@
         width: 95vw;
         display: flex;
         align-items: center;
-        justify-content: center;
+        /* justify-content: center; */
         background: var(--bgColor);
         border-radius: 1rem;
         overflow: hidden;

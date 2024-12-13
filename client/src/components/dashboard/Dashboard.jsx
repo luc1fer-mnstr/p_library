@@ -1,7 +1,7 @@
 import React from 'react'
 import './dashboard.css'
 import SideBar from './components/siderBar/SideBar'
-import Body from './components/body/Body'
+import { Outlet } from 'react-router-dom'
 
 
 function Dashboard() {
@@ -9,7 +9,7 @@ function Dashboard() {
     <div className='dashboard flex'>
       <div className="dashboardContainer flex">
         <SideBar />
-        <Body />
+        <Outlet/>
       </div>
     </div>
   )
