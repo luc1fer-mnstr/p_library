@@ -2,17 +2,18 @@ import React from 'react'
 import './about.css'
 
 import user1 from '../assets/user1.jpg'
+import user2 from '../assets/user2.jpg'
 import user3 from '../assets/user3.jpg'
 import user4 from '../assets/user4.jpg'
 import user5 from '../assets/user5.jpg'
-import user6 from '../assets/user6.jpg'
+
 
 const creators = [
-  { name: "John Doe", role: "Frontend Developer", image: user1 },
-  { name: "Jane Smith", role: "Backend Developer", image: user3 },
-  { name: "Anna Brown", role: "UI/UX Designer", image: user4 },
-  { name: "Mike Johnson", role: "Project Manager", image: user5 },
-  { name: "Emily Davis", role: "Tester", image: user6 },
+  { name: "Kyaw Lin", role: "Frontend Developer", image: user1 },
+  { name: "Khaing Zin Thet", role: "UI/UX Designer", image: user2 },
+  { name: "Phyo Wai Aung", role: "UI/UX Designer", image: user3 },
+  { name: "Yan Naing Kyaw", role: "Project Manager", image: user4 },
+  { name: "Wai Yan Min", role: "Backend Developer", image: user5 },
   { name: "Paul Lee", role: "DevOps Engineer", image: user1 },
   { name: "Sophia Miller", role: "Full Stack Developer", image: user3},
   { name: "Oliver Wilson", role: "Database Administrator", image: user4 },

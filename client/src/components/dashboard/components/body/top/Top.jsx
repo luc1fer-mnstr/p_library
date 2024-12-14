@@ -8,8 +8,8 @@ import {MdOutlineNotificationsNone} from 'react-icons/md'
 import {BsArrowRightShort, BsQuestionCircle} from 'react-icons/bs'
 
 // imgaes
-import user1 from '../../../assets/user1.jpg'
-import user2 from '../../../assets/user2.png'
+import user1 from '../../../assets/img1.jpg'
+import user2 from '../../../assets/img2.png'
 import video from '../../../assets/video.mp4'
 
 function Top() {

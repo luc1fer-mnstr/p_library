@@ -6,14 +6,14 @@ import {BsArrowRightShort} from 'react-icons/bs'
 import {AiFillHeart, AiOutlineHeart} from 'react-icons/ai'
 
 // images
-import user3 from '../../../assets/user3.jpg'
-import user4 from '../../../assets/user4.jpg'
-import user5 from '../../../assets/user5.jpg'
-import user6 from '../../../assets/user6.jpg'
-import user7 from '../../../assets/user7.jpg'
-import user8 from '../../../assets/user8.jpg'
-import user9 from '../../../assets/user9.jpg'
-import user10 from '../../../assets/user10.jpg'
+import img1 from '../../../assets/img1.jpg'
+import img2 from '../../../assets/img2.jpg'
+import img3 from '../../../assets/img3.jpg'
+import img4 from '../../../assets/img4.jpg'
+import img5 from '../../../assets/img5.jpg'
+import img6 from '../../../assets/img6.jpg'
+import img7 from '../../../assets/img7.jpg'
+import img8 from '../../../assets/img8.jpg'
 
 
 function Listing() {
@@ -31,25 +31,25 @@ function Listing() {
 
         <div className="singleItem">
           <AiFillHeart className='icon' />
-          <img src={user3} alt="Image name" />
+          <img src={img1} alt="Image name" />
           <h3>Vince</h3>
         </div>
 
         <div className="singleItem">
           <AiOutlineHeart className='icon' />
-          <img src={user4} alt="Image name" />
+          <img src={img2} alt="Image name" />
           <h3>Coffee</h3>
         </div>
 
         <div className="singleItem">
           <AiOutlineHeart className='icon' />
-          <img src={user5} alt="Image name" />
+          <img src={img3} alt="Image name" />
           <h3>Fern</h3>
         </div>
 
         <div className="singleItem">
           <AiFillHeart className='icon' />
-          <img src={user6} alt="Image name" />
+          <img src={img4} alt="Image name" />
           <h3>Spider</h3>
         </div>
 
@@ -66,10 +66,10 @@ function Listing() {
 
             <div className="card flex">
               <div className="users">
-                <img src={user7} alt="User Image" />
-                <img src={user8} alt="User Image" />
-                <img src={user9} alt="User Image" />
-                <img src={user10} alt="User Image" />
+                <img src={img5} alt="User Image" />
+                <img src={img6} alt="User Image" />
+                <img src={img7} alt="User Image" />
+                <img src={img8} alt="User Image" />
               </div>
               <div className="cardText">
                 <span>
@@ -92,10 +92,10 @@ function Listing() {
 
             <div className="card flex">
               <div className="users">
-                <img src={user7} alt="User Image" />
-                <img src={user9} alt="User Image" />
-                <img src={user8} alt="User Image" />
-                <img src={user10} alt="User Image" />
+                <img src={img4} alt="User Image" />
+                <img src={img5} alt="User Image" />
+                <img src={img6} alt="User Image" />
+                <img src={img7} alt="User Image" />
               </div>
               <div className="cardText">
                 <span>

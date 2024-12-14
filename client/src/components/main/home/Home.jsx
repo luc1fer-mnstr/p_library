@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 
 // video/image
 import banner from '../assets/banner.mp4'
+import get1 from '../assets/get1.mp4'
+import get2 from '../assets/get2.mp4'
 import book from '../assets/book.jpg'
 
 
@@ -23,10 +25,13 @@ const Home = () => {
     <div className="what flex">
         <h1>What you'll get</h1>
         <div className="div1 flex">
-          <video src={banner} autoPlay loop muted></video>
+          <video src={get1} autoPlay loop muted></video>
+          <span className="get1">Lorem Ipsum is simply dummy text of <br/><br/> the printing and typesetting industry.</span>
         </div>
         <div className="div2 flex">
-          <video src={banner} autoPlay loop muted></video>
+          <video src={get2} autoPlay loop muted></video>
+          <span className="get1">Lorem Ipsum is simply dummy text of <br/><br/> the printing and typesetting industry.</span>
+
         </div>
         <div className="div3"></div>
         <div className="div4"></div>
