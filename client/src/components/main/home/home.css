@@ -100,7 +100,7 @@
 
     .get1,.get2{
       width: 400px;
-      color: var(--paleGreen);
+      color: black;
       font-size: var(--h2FontSize);
       font-weight: 500;
       text-align: center;

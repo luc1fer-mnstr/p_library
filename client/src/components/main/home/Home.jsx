@@ -3,7 +3,7 @@ import "./home.css";
 import { Link } from "react-router-dom";
 
 // video/image
-import banner from '../assets/banner.mp4'
+import banner from '../assets/banner2.mp4'
 import get1 from '../assets/get1.mp4'
 import get2 from '../assets/get2.mp4'
 import book from '../assets/book.jpg'

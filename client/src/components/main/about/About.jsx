@@ -6,24 +6,25 @@ import user2 from '../assets/user2.jpg'
 import user3 from '../assets/user3.jpg'
 import user4 from '../assets/user4.jpg'
 import user5 from '../assets/user5.jpg'
+import user6 from '../assets/user6.jpg'
+import user7 from '../assets/user7.jpg'
 
 
 const creators = [
+  { name: "Phyo Wai Aung", role: "Project Manager", image: user3 },
+  { name: "Wai Yan Min", role: "Fullstack Developer", image: user5 },
   { name: "Kyaw Lin", role: "Frontend Developer", image: user1 },
-  { name: "Khaing Zin Thet", role: "UI/UX Designer", image: user2 },
-  { name: "Phyo Wai Aung", role: "UI/UX Designer", image: user3 },
-  { name: "Yan Naing Kyaw", role: "Project Manager", image: user4 },
-  { name: "Wai Yan Min", role: "Backend Developer", image: user5 },
-  { name: "Paul Lee", role: "DevOps Engineer", image: user1 },
-  { name: "Sophia Miller", role: "Full Stack Developer", image: user3},
-  { name: "Oliver Wilson", role: "Database Administrator", image: user4 },
+  { name: "Khaing Zin Thet", role: "Frontend Developer", image: user2 },
+  { name: "Hon Saw", role: "UI/UX Designer", image: user6 },
+  { name: "June June", role: "Tester", image: user7 },
+  { name: "Yan Naing Kyaw", role: "Tester", image: user4 },
 ];
 
 
 function About() {
   return (
     <section className="about-section">
-  <h1 className="about-heading">About Our Library</h1>
+  <h1 className="about-heading">Meet Our Creators</h1>
   <p className="about-description">
     This online library is exclusively created for PIU students by Batch 1 IT students. Explore, learn, and grow with ease!
   </p>
