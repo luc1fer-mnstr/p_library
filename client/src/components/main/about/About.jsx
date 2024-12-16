@@ -1,8 +1,6 @@
 import React from 'react'
 import './about.css'
 
-import mission from '../assets/mission.mp4'
-import vision from '../assets/mission.mp4'
 import user1 from '../assets/user1.jpg'
 import user2 from '../assets/user2.jpg'
 import user3 from '../assets/user3.jpg'
