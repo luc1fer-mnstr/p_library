@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import axios from "axios"
 
 // assets
-import video from '../../loginAssets/video.mp4'
+import video from '../../loginAssets/banner.mp4'
 import logo from '../../loginAssets/logo.png'
 
 // icons
@@ -46,8 +46,8 @@ function Register() {
             <video src={video} autoPlay muted loop></video>
         
             <div className="textDiv">
-                <h2 className="title">Create And Sell Extroardinary Products</h2>
-                <p>Adopt the peace of nature!</p>
+                <h2 className="title">Read to learn, read to grow</h2>
+                <p>Let's read together</p>
             </div>
 
             <div className="footerDiv flex">

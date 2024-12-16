@@ -73,7 +73,7 @@
     }
 }
 
-
+/* What You'll Get Session Start */
 .what{
   background: var(--bgColor);
   position: relative;
@@ -100,7 +100,7 @@
 
     .get1,.get2{
       width: 400px;
-      color: black;
+      color: var(--whiteColor);
       font-size: var(--h2FontSize);
       font-weight: 500;
       text-align: center;
@@ -108,7 +108,7 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%,-50%);
-      background: rgba(255, 255, 255, .1);
+      background: rgba(137, 137, 137, 0.1);
       padding: 2rem 1rem;
       border-radius: 5px;
     }
@@ -123,7 +123,7 @@
     text-transform: uppercase;
     text-decoration: underline;
   }
-
+  
   /* .div3,.div4,.div5,.div6{
     position: absolute;
     width: 20px;
@@ -159,6 +159,7 @@
   } */
 }
 
+/* Latest Book Session Start */
 .latestBooks{
   flex-direction: column;
   gap: 1rem;

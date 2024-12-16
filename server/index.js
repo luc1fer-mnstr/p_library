@@ -1,12 +1,15 @@
 // Our dependecies
 const express = require('express')
-const app = express()
 const mysql = require('mysql')
 const cors = require('cors')
+const multer = require('multer')
+const path = require('path')
 
 // help in user submited
+const app = express()
 app.use(express.json())
 app.use(cors())
+app.use(express.static('public'))
 
 // run sever
 app.listen(3002, ()=>{
@@ -19,6 +22,25 @@ const db = mysql.createConnection({
     host: 'localhost',
     password: '',
     database: 'ldb',
+})
+
+// Import files from add book
+const fileStorage = multer.diskStorage({
+    destination: (req, file, cb) => {
+        if (file.fieldname === 'file') {
+            cb(null, 'public/files');
+        } else if (file.fieldname === 'image') {
+            cb(null, 'public/images');
+        }
+    },
+    filename: (req, file, cb) => {
+        const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1e9);
+        cb(null, uniqueSuffix + '-' + file.originalname);
+    }
+});
+
+const upload = multer({
+    storage: fileStorage
 })
 
 // register user
@@ -43,24 +65,49 @@ app.post('/register', (req, res)=>{
     })
 })
 
-app.post('/dashboard/add-book', (req, res)=>{
-    const bookName = req.body.bookName
-    const author = req.body.author
-    const type = req.body.type
-    const file = req.body.file
+// app.post('/dashboard/add-book',upload.fields([{name:'file'},{name:'image'}]), (req, res)=>{
+//     const {bookName, author, type} = req.body
+//     const filePath = req.files.file ? req.files.file[0].path : null;
+//     const imagePath = req.files.image ? req.files.image[0].path : null;
 
-    const SQL = 'INSERT INTO books (book_name, author,type,file_path) VALUES (?,?,?,?)'
-    const Values = [bookName, author, type, file]
+//     if(!filePath){
+//         return res.status(400).json({error: "File upload failed"});
+//     }
 
-    db.query(SQL, Values, (err, results)=>{
-        if(err){
-            res.send(err)
-        }else{
-            console.log('Book added successful!')
-            res.send({message: "Book Added"})
+//     const SQL = 'INSERT INTO books (bookName, author,bookImage,type, path) VALUES (?,?,?,?,?)'
+//     const Values = [bookName, author, imagePath,type, filePath]
+
+//     db.query(SQL, Values, (err, results)=>{
+//         if(err){
+//             res.send(err)
+//         }else{
+//             console.log('Book added successful!')
+//             res.send({message: "Book Added"})
+//         }
+//     })
+// })
+
+app.post('/dashboard/add-book', upload.fields([{ name: 'file' }, { name: 'image' }]), (req, res) => {
+    const { bookName, author, type } = req.body;
+    const filePath = req.files.file ? req.files.file[0].path : null;
+    const imagePath = req.files.image ? req.files.image[0].path : null;
+
+    if (!filePath) {
+        return res.status(400).json({ error: 'File upload failed' });
+    }
+
+    const SQL = 'INSERT INTO books (bookName, author, bookImage, type, path) VALUES (?,?,?,?,?)';
+    const Values = [bookName, author, imagePath, type, filePath];
+
+    db.query(SQL, Values, (err, results) => {
+        if (err) {
+            res.status(500).send(err);
+        } else {
+            console.log('Book added successfully!');
+            res.send({ message: "Book Added" });
         }
-    })
-})
+    });
+});
 
 // login user
 app.post('/login', (req,res)=>{

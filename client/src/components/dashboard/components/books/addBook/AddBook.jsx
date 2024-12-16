@@ -6,24 +6,29 @@ const AddBook = () => {
   const [bookName, setBookName] = useState('');
   const [author, setAuthor] = useState('');
   const [type, setType] = useState('');
-  const [file, setFile] = useState(null);
+  const [file, setFile] = useState();
+  const [image, setImage] = useState();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
     
-    axios.post('http://localhost:3002/dashboard/add-book',{
-        bookName: bookName,
-        author: author,
-        type: type,
-        file: file
-    }).then(() => {
-        console.log("New Book succefully added")
-        setBookName('')
-        setAuthor('')
-        setType('')
-        setFile(null)
+    const formData = new FormData();
+    formData.append('bookName', bookName);
+    formData.append('author', author);
+    formData.append('type', type);
+    formData.append('file', file);
+    formData.append('image', image);
+
+    axios.post('http://localhost:3002/dashboard/add-book', formData, {
+      headers: {'Content-Type': 'multipart/form-data'},
     })
+    .then((res) => {
+      console.log(res.data)
+    })
+    .catch((error) => {
+      console.log(error)
+    })
+   
   };
 
   return (
@@ -83,6 +88,19 @@ const AddBook = () => {
           type="file"
           id="file"
           onChange={(e) => setFile(e.target.files[0])}
+          className="form-input"
+          required
+        />
+      </div>
+
+      <div className="form-group">
+        <label htmlFor="file" className="form-label">
+          Upload Image
+        </label>
+        <input
+          type="file"
+          id="image"
+          onChange={(e) => setImage(e.target.files[0])}
           className="form-input"
           required
         />
