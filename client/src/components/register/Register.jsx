@@ -64,14 +64,14 @@ function Register() {
                 <h3>Let Us Know You!</h3>
             </div>
 
-            <form action="" className="form grid">
+            <form action="" className="form grid"  >
                 {/* <span className='showMessage'>Register Status will go here</span> */}
 
                 <div className="inputDiv">
-                    <label htmlFor="eamil">Eamil</label>
+                    <label htmlFor="eamil">Email</label>
                     <div className="input flex">
                         <MdMarkEmailRead className="icon" />
-                        <input type="email" id='eamil' placeholder='Enter Eamil' onChange={(event)=>{
+                        <input type="email" id='eamil' placeholder='Enter Email' onChange={(event)=>{
                             setEmail(event.target.value)
                         }} />
                     </div>

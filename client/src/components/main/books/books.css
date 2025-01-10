@@ -54,8 +54,10 @@
 /* Book Grid */
 .book-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: var(--grid-gap);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* gap: var(--grid-gap); */
+    gap: 20px;
+    padding: 20px;
 }
 
 /* Book Card */
@@ -63,10 +65,14 @@
     background-color: white;
     padding: 20px;
     border-radius: 8px;
+    border: 1px solid #ddd;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
 }
 
 .book-card:hover {
@@ -76,16 +82,18 @@
 /* Book Cover */
 .book-cover img {
     width: 100%;
+    max-width: 150px;
     height: auto;
+    object-fit: contain;
     border-radius: 8px;
-    margin-bottom: 15px;
-    object-fit: cover;
+    margin-bottom: 10px;
 }
 
 /* Book Details */
 .book-details {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 /* Book Title and Author */
@@ -93,7 +101,7 @@
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--dark-gray-color);
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
 .book-author {
@@ -110,16 +118,19 @@
 .download-btn {
     background-color: var(--button-bg);
     color: var(--button-text-color);
-    padding: 12px 25px;
-    font-size: var(--font-size);
+    padding: 10px 15px;
+    font-size: 1rem;
     border-radius: 4px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 100%;
+    max-width: 150px;
+    height: auto;
     cursor: pointer;
     border: none;
     transition: background-color 0.3s ease;
+    gap: 5px;
 }
 
 .download-btn:hover {
@@ -128,4 +139,5 @@
 
 .download-icon {
     margin-right: 10px;
+    font-size: 1.2rem;
 }

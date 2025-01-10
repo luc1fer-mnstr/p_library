@@ -79,7 +79,18 @@
           transition: color 0.3s ease;
 
           &:hover{
-            color: rgba(4, 50, 4, 1);
+            color: rgba(4, 50, 4, .5);
+          }
+        }
+
+        .logout{
+          background:  #f0a500;
+          padding: 10px;
+          border-radius: 5px;
+          color: whitesmoke;
+
+          &:hover{
+            color: rgba(4, 50, 4, .5);
           }
         }
       }

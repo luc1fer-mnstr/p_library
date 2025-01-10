@@ -4,17 +4,28 @@ import Rating from 'react-rating-stars-component'; // Install this package to en
 import './books.css'
 
 // images
-import book from '../assets/book.jpg'
+import jsbook from '../assets/js.jpg'
+import reactbook from '../assets/react.jpg'
+import cssbook from '../assets/node.png'
+import databook from '../assets/data.jpg'
+import mlbook from '../assets/ml.jpg'
+import edubook from '../assets/education.jpg'
+import anatomybook from '../assets/anatomy.jpg'
+import nursingbook from '../assets/nursing.jpg'
+
 
 const BookSection = () => {
     const [searchQuery, setSearchQuery] = useState('');
     const [selectedCategory, setSelectedCategory] = useState('All');
     const [books] = useState([
-        { id: 1, name: 'JavaScript Basics', author: 'John Doe', category: 'Programming', rating: 4, coverImage: book, downloadLink: '/books/js-basics.pdf' },
-        { id: 2, name: 'React for Beginners', author: 'Jane Smith', category: 'Programming', rating: 5, coverImage: book, downloadLink: '/books/react-beginners.pdf' },
-        { id: 3, name: 'Advanced CSS', author: 'Mark Lee', category: 'Design', rating: 3, coverImage: book, downloadLink: '/books/advanced-css.pdf' },
-        { id: 4, name: 'Data Science Handbook', author: 'Sarah Brown', category: 'Data Science', rating: 4, coverImage: book, downloadLink: '/books/data-science.pdf' },
-        { id: 5, name: 'Machine Learning 101', author: 'Michael White', category: 'Data Science', rating: 5, coverImage: book, downloadLink: '/books/machine-learning.pdf' },
+        { id: 1, name: 'JavaScript Basics', author: 'John Doe', category: 'Programming', rating: 4, coverImage: jsbook, downloadLink: '/books/js-basics.pdf' },
+        { id: 2, name: 'React for Beginners', author: 'Jane Smith', category: 'Programming', rating: 5, coverImage: reactbook, downloadLink: '/books/react-beginners.pdf' },
+        { id: 3, name: 'Node JS', author: 'Johnathom Wealer', category: 'Programming', rating: 3, coverImage: cssbook, downloadLink: '/books/advanced-css.pdf' },
+        { id: 4, name: 'Data Science Handbook', author: 'Sarah Brown', category: 'Data Science', rating: 4, coverImage: databook, downloadLink: '/books/data-science.pdf' },
+        { id: 5, name: 'Machine Learning 101', author: 'Michael White', category: 'Data Science', rating: 5, coverImage: mlbook, downloadLink: '/books/machine-learning.pdf' },
+        { id: 6, name: 'Teacher Development', author: 'Susan', category: 'Literature', rating: 5, coverImage: edubook, downloadLink: '/books/machine-learning.pdf' },
+        { id: 7, name: 'Anatomy & Physiology', author: 'Anne Waugh', category: 'Literature', rating: 5, coverImage: anatomybook, downloadLink: '/books/machine-learning.pdf' },
+        { id: 8, name: 'Nursing', author: 'Michael White', category: 'Literature', rating: 5, coverImage: nursingbook, downloadLink: '/books/machine-learning.pdf' },
         // Add more books as needed
     ]);
 

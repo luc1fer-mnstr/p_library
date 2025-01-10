@@ -6,7 +6,14 @@ import { Link } from "react-router-dom";
 import banner from '../assets/banner2.mp4'
 import get1 from '../assets/discover.mp4'
 import get2 from '../assets/tool.mp4'
-import book from '../assets/book.jpg'
+import jsbook from '../assets/js.jpg'
+import reactbook from '../assets/react.jpg'
+import cssbook from '../assets/css.jpg'
+import databook from '../assets/data.jpg'
+import mlbook from '../assets/ml.jpg'
+import edubook from '../assets/education.jpg'
+import anatomybook from '../assets/anatomy.jpg'
+import nursingbook from '../assets/nursing.jpg'
 
 
 const Home = () => {
@@ -46,73 +53,73 @@ const Home = () => {
       </div>
       <div className="latestCard flex">
           <div className="items flex">
-            <img src={book} alt="Book Name" />
+            <img src={jsbook} alt="Java Script" />
             <div className="details flex">
-              <h3>Book Title</h3>
-              <span>Author</span>
+              <h3>Java Script</h3>
+              <span>John Doe</span>
               <br/>
               <Link to="/home/books">Get Now</Link>
             </div>
           </div>
           <div className="items flex">
-            <img src={book} alt="Book Name" />
+            <img src={reactbook} alt="Book Name" />
             <div className="details flex">
-              <h3>Book Title</h3>
-              <span>Author</span>
+              <h3>React</h3>
+              <span>Jane Smith</span>
               <br/>
               <Link to="/home/books">Get Now</Link>
             </div>
           </div>
           <div className="items flex">
-            <img src={book} alt="Book Name" />
+            <img src={databook} alt="Book Name" />
             <div className="details flex">
-              <h3>Book Title</h3>
-              <span>Author</span>
+              <h3>Data Science</h3>
+              <span>Sarah Brown</span>
               <br/>
               <Link to="/home/books">Get Now</Link>
             </div>
           </div>
           <div className="items flex">
-            <img src={book} alt="Book Name" />
+            <img src={mlbook} alt="Book Name" />
             <div className="details flex">
-              <h3>Book Title</h3>
-              <span>Author</span>
+              <h3>Machine Learning</h3>
+              <span>Micheal White</span>
               <br/>
               <Link to="/home/books">Get Now</Link>
             </div>
           </div>
           <div className="items flex">
-            <img src={book} alt="Book Name" />
+            <img src={cssbook} alt="Book Name" />
             <div className="details flex">
-              <h3>Book Title</h3>
-              <span>Author</span>
+              <h3>Advanced Css</h3>
+              <span>Joe Brown</span>
               <br/>
               <Link to="/home/books">Get Now</Link>
             </div>
           </div>
           <div className="items flex">
-            <img src={book} alt="Book Name" />
+            <img src={edubook} alt="Book Name" />
             <div className="details flex">
-              <h3>Book Title</h3>
-              <span>Author</span>
+              <h3>Teacher Development</h3>
+              <span>Susan</span>
               <br/>
               <Link to="/home/books">Get Now</Link>
             </div>
           </div>
           <div className="items flex">
-            <img src={book} alt="Book Name" />
+            <img src={nursingbook} alt="Book Name" />
             <div className="details flex">
-              <h3>Book Title</h3>
-              <span>Author</span>
+              <h3>Nursing</h3>
+              <span>Michael White</span>
               <br/>
               <Link to="/home/books">Get Now</Link>
             </div>
           </div>
           <div className="items flex">
-            <img src={book} alt="Book Name" />
+            <img src={anatomybook} alt="Book Name" />
             <div className="details flex">
-              <h3>Book Title</h3>
-              <span>Author</span>
+              <h3>Anatomy</h3>
+              <span>Anne Waugh</span>
               <br/>
               <Link to="/home/books">Get Now</Link>
             </div>

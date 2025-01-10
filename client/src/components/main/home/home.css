@@ -175,6 +175,9 @@
       text-transform: uppercase;
       text-decoration: underline;
     }
+    Link{
+      color: blue;
+    }
   }
 
   .latestCard{
@@ -238,4 +241,22 @@
   bottom: 10px;
   border-bottom: 5px solid var(--primaryColor);
   border-right: 5px solid var(--primaryColor);
+}
+
+@media (min-width: 768px) {
+  .what {
+    flex-direction: row; /* Align items side by side on larger screens */
+    justify-content: space-between;
+  }
+
+  .div1, .div2 {
+    flex-direction: row; /* Align video and text side by side */
+    gap: 20px;
+    text-align: left; /* Aligns text to the left */
+  }
+
+  .get1, .get2 {
+    font-size: 1.2rem; /* Slightly increase font size on larger screens */
+    max-width: 300px; /* Sets a consistent width for text blocks */
+  }
 }
